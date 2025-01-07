@@ -15,6 +15,18 @@ File: Main Css
   padding: 0;
 }
 
+.greenbtn {
+  background-color: rgb(100, 197, 177)!important;
+  border-color: rgb(100, 197, 177) !important;
+  color: white !important;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
 .metismenu ul li {
   list-style: none;
 }

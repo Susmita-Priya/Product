@@ -22,6 +22,15 @@ class CartController extends Controller
 
         Cart::where('product_option_id', $request->option_id)->delete();
 
+
+
         return redirect()->back()->with('success', 'Item removed from cart!');
     }
+
+    public function index()
+    {
+        $cartItems = Cart::with('productOption')->get();
+        return view('cart.cart_list', compact('cartItems'));
+    }
+
 }

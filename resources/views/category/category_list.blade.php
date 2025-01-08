@@ -39,11 +39,15 @@
                                 </div>
                             </div>
                         </div>
+                        @php
+                            $i = 1;
+                        @endphp
 
                         <table class="table table-hover m-0 tickets-list table-actions-bar dt-responsive nowrap"
                             cellspacing="0" width="100%" id="datatable">
                             <thead>
                                 <tr>
+                                    <th>Serial</th>
                                     <th>Name</th>
                                     <th>Actions</th>
                                 </tr>
@@ -51,6 +55,7 @@
                             <tbody>
                                 @foreach ($categories as $category)
                                     <tr>
+                                        <td>{{ $i++ }}</td>
                                         <td>{{ $category->name }}</td>
                                         <td class="text">
                                             <div class="btn-group dropdown">

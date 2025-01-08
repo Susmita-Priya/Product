@@ -39,5 +39,7 @@ Route::put('product/update/{product}', [ProductController::class, 'update'])->na
 Route::delete('product/destroy/{product}', [ProductController::class, 'destroy'])->name("product.destroy");
 
 
+Route::get('cart/index', [CartController::class, 'index'])->name('cart.index');
 Route::post('cart/add', [CartController::class, 'add'])->name('cart.add');
 Route::post('cart/remove', [CartController::class, 'remove'])->name('cart.remove');
+

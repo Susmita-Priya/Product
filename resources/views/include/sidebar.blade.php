@@ -23,6 +23,7 @@
                     <ul class="nav-second-level " aria-expanded="false">
                             <li><a href="{{ route('category.index') }}">Category List</a></li>
                             <li><a href="{{ route('product.index') }}">Product List</a></li>
+                            <li><a href="{{ route('cart.index') }}">Cart List</a></li>
 
                     </ul>
                 </li>
